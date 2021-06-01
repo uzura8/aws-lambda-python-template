@@ -1,0 +1,18 @@
+{
+  "name": "LambdaPythonTemplate",
+  "description": "Lambda Python Template",
+  "runtime": "python3.8",
+  "handler": "lambda_function.lambda_handler",
+  "ignore": [
+    "lambda_function\\.zip$"
+  ],
+  "timeout": 300,
+  "memory": 128,
+  "region": "ap-northeast-1",
+  "role": "arn:aws:iam::************:role/iam-role-lambda-development",
+  "variables": {
+    "CONFIG_S3_BUCKET_NAME": "your-config-bucket-name",
+    "CONFIG_S3_OBJECT_PATH": "your-config-bucket-file-path.json"
+  }
+}
+
